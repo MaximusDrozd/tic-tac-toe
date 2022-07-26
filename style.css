@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60px;
+  padding: 0 50px;
+}
+
+.header {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  color: #020244;
+  font-weight: bold;
+  box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  background: rgba(224, 130, 131, 0.719);
+}
+
+.main {
+  width: 100%;
+  height: calc(100vh - 120px);
+  padding: 0 40px;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(3, 3, 73, 0.295), #020244);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.main .gamer {
+  width: 300px;
+  height: 50px;
+  border: 2px solid transparent;
+  background: url(./assets/AMG.svg);
+  background-size: 300px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main .gamer:first-of-type {
+  background: url(./assets/M.svg);
+  background-size: 300px 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .gamer.active {
+  box-shadow: 0px 5px 10px 2px rgba(252, 235, 3, 0.856);
+}
+.main .blocked {
+  pointer-events: none;
+}
+.main .line {
+  display: flex;
+}
+.main .line:nth-child(2) {
+  border-top: 10px solid rgba(224, 130, 131, 0.719);
+  border-bottom: 10px solid rgba(224, 130, 131, 0.719);
+}
+.main .line .cell {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+.main .line .cell:nth-child(2) {
+  border-left: 10px solid rgba(224, 130, 131, 0.719);
+  border-right: 10px solid rgba(224, 130, 131, 0.719);
+}
+.main .line .cell.bmw {
+  background: url(./assets/bmw.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main .line .cell.mb {
+  background: url(./assets/mb.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main .popup {
+  width: 300px;
+  height: 300px;
+  background: rgba(28, 28, 121, 0.918);
+  box-shadow: 0px 5px 10px 2px rgba(252, 235, 3, 0.856);
+  position: absolute;
+  left: calc(50% - 150px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+.main .popup .text {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  color: rgba(252, 235, 3, 0.856);
+  font-weight: bold;
+  text-align: center;
+}
+.main .popup .button {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  color: #020244;
+  font-weight: bold;
+  height: 50px;
+  width: 100px;
+  background: rgba(252, 235, 3, 0.856);
+  border: 3px solid #020244;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.main .hidden {
+  display: none;
+}
+
+.footer {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  color: black;
+  font-weight: normal;
+  background: rgba(3, 3, 73, 0.295);
+  justify-content: flex-end;
+  gap: 50px;
+}
+.footer .logo {
+  width: 30px;
+  height: 30px;
+}
+.footer .logo-big {
+  width: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
