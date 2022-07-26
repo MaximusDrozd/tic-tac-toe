@@ -1,2 +1,2 @@
 # tic-tac-toe
-url: https://github.com/MaximusDrozd/tic-tac-toe/tic-tac-toe
+url: https://maximusdrozd.github.io/tic-tac-toe/tic-tac-toe
